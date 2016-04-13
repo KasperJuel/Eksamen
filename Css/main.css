@@ -1,0 +1,422 @@
+﻿html, body,
+p, h1, h2, h3, h4, h5, h6,
+ol, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/gfx/bg/pattern2.jpg);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+}
+
+input {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 900px;
+    min-height: 600px;
+    margin: 0 auto;
+    background-color: #000;
+}
+
+.clear {
+    clear: both;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/******************************************************
+                             HEADER
+    ******************************************************/
+
+header {
+    width: 750px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+/* NAVIGATION */
+
+nav {
+    float: left;
+}
+
+    nav ul {
+        display: inline;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #000;
+    }
+
+#nav-forside {
+    background-color: red;
+    display: inline-block;
+    height: 35px;
+    width: 150px;
+    padding: 15px 0px 0px 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#nav-om {
+    background-color: yellow;
+    display: inline-block;
+    width: 150px;
+    height: 35px;
+    padding: 15px 0px 0px 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 5px;
+}
+
+#nav-kontakt {
+    background-color: green;
+    display: inline-block;
+    height: 35px;
+    width: 150px;
+    padding: 15px 0px 0px 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 5px;
+}
+
+/* SØGFELTER */
+
+#search-field {
+    float: left;
+    margin: 0 auto;
+    margin-left: 8px;
+}
+
+.txtsearch {
+    height: 35px;
+}
+
+.btnsearch {
+    height: 35px;
+    width: 80px;
+    background-color: deepskyblue;
+    margin-left: -3px;
+}
+
+/******************************************************
+                         CONTENT
+    ******************************************************/
+
+
+
+#content {
+    width: 750px;
+    margin: 0 auto;
+    min-height: 400px;
+    color: #fff;
+}
+
+#oversigt {
+    width: 150px;
+    min-height: 200px;
+    border: 5px solid #000;
+    background-color: #fff;
+    position: absolute;
+    top: 166px;
+    left: -595px;
+    margin-left: 50%;
+    padding: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* DEFAULT.ASPX */
+
+#seneste-1 {
+    width: 550px;
+    float: left;
+}
+
+#seneste-2 {
+    width: 171px;
+    float: left;
+    margin-left: 29px;
+}
+
+#left-img {
+    width: 550px;
+}
+
+#right-img {
+    width: 171px;
+    margin-bottom: 20px;
+}
+
+#seneste {
+    width: 400px;
+}
+
+/* PLAKATOVERSIGT.ASPX */
+
+.kat-oversigt {
+    width: 150px;
+    height: 250px;
+    border: 1px solid #fff;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.prod-oversigt {
+    width: 160px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+.left-titel {
+    float: left;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.right-price {
+    float: right;
+    font-size: 12px;
+}
+
+.kat-oversigt h2 {
+    padding: 210px 0px 0px 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.kat-oversigt a {
+    color: #fff;
+}
+
+.prod-img-oversigt {
+    width: 160px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/* PRODUKTKATEGORI.ASPX */
+
+.h2 {
+    height: 60px;
+    width: 160px;
+    border: 1px solid #fff;
+    padding: 24px 0px 0px 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.h2-handel {
+    height: 60px;
+    width: 260px;
+    border: 1px solid #fff;
+    padding: 24px 0px 0px 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.img-oversigt {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#rbl {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 32px;
+}
+
+/* VISPRODUKT.ASPX */
+
+#produkt-info {
+    max-width: 150px;
+    float: left;
+    margin-left: 98px;
+}
+
+#produkt-img-detaljer {
+    float: left;
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.pladser-red {
+    background: #a31016;
+    height: 40px;
+    width: 150px;
+    float: right;
+    outline: 1px solid white;
+    font-size: 30px;
+}
+
+    .pladser-red p {
+        font-size: 20px;
+        float: right;
+        margin: 10px 31px;
+        width: 90px;
+    }
+
+.pladser-yellow {
+    background: orange;
+    height: 40px;
+    width: 150px;
+    float: right;
+    outline: 1px solid white;
+    font-size: 30px;
+}
+
+    .pladser-yellow a {
+        font-size: 20px;
+        float: right;
+        margin: 10px 23px;
+        width: 90px;
+        color: #000;
+    }
+
+.pladser-green {
+    background: green;
+    height: 40px;
+    width: 150px;
+    float: right;
+    outline: 1px solid white;
+    font-size: 30px;
+}
+
+    .pladser-green p {
+        font-size: 20px;
+        float: right;
+        margin: 10px 23px;
+        width: 90px;
+    }
+
+/* BESTILLING.ASPX */
+
+#bestilling-left {
+    float: left;
+    width: 350px;
+}
+
+#bestilling-right {
+    float: left;
+}
+
+#bestilling-info {
+    float: left;
+    margin-left: 100px;
+}
+
+.input-bestilling {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.input-multi-bestilling {
+    width: 245px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.btn-bestilling {
+    background: green;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    outline: 1px solid white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* OMPLAKATEN.ASPX */
+
+#column-1 {
+    width: 355px;
+    float: left;
+}
+
+#column-2 {
+    width: 355px;
+    float: left;
+    margin-left: 30px;
+}
+
+/******************************************************
+                         FOOTER
+    ******************************************************/
+
+footer {
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-top: 2px solid #fff;
+}
+
+    footer a {
+        color: #fff;
+    }
+
+#footer-kontakt {
+    margin-top: 20px;
+    float: left;
+}
+
+#footer-links {
+    margin-top: 20px;
+    margin-left: 80px;
+    float: left;
+    text-decoration: none;
+}
+
+#footer-logo {
+    width: 300px;
+    margin-top: 20px;
+    float: right;
+}
+
+.hej {
+    width: 700px;
+    margin-bottom: 20px;
+}

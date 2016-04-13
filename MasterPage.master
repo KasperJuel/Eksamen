@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Plakaten</title>
+    <link href="Css/main.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="wrapper">
+            <asp:Panel ID="pnlSearch" runat="server" DefaultButton="btnSearch">
+
+                <header>
+
+                    <div id="center">
+                        <nav>
+                            <ul>
+                                <li id="nav-forside"><a href="Default.aspx">Forside</a></li>
+                                <li id="nav-om"><a href="OmPlakaten.aspx">Om plakaten</a></li>
+                                <li id="nav-kontakt"><a href="Kontakt.aspx">Kontakt</a></li>
+                            </ul>
+                        </nav>
+
+                        <div id="search-field">
+                            <asp:TextBox ID="txtSearch" runat="server" CssClass="txtsearch"></asp:TextBox>
+                            <asp:Button ID="btnSearch" runat="server" Text="SØG" CssClass="btnsearch" OnClick="btnSearch_Click" />
+                        </div>
+                    </div>
+
+                </header>
+            </asp:Panel>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+
+            <footer>
+
+                <div id="footer-kontakt">
+                    <p>Plakaten</p>
+                    <p>Bredgade 14</p>
+                    <p>9000 Aalborg</p>
+                    <p>89 12 13 14</p>
+                    <p>info@plakaten.dk</p>
+                </div>
+
+                <div id="footer-links">
+                    <p><a href="OmPlakaten.aspx">Om Plakaten</a></p>
+                    <p><a href="Kontakt.aspx">Kontakt</a></p>
+                    <p><a href="Handelsbetingelser.aspx">Handelsbetingelser</a></p>
+                    <p>
+                        <a href="Admin/Login.aspx" style="color: red;">
+                            <img src="/gfx/key.png" alt="key" />Login</a>
+                    </p>
+                </div>
+
+                <img src="/gfx/logo/plakaten_logo.png" alt="logo" id="footer-logo" />
+                <div class="clear"></div>
+
+            </footer>
+        </div>
+        <!-- wrapper -->
+
+        <div id="oversigt">
+            <asp:Literal ID="litOversigt" runat="server" />
+            <asp:Literal ID="litKategori" runat="server" />
+        </div>
+
+
+
+    </form>
+</body>
+</html>

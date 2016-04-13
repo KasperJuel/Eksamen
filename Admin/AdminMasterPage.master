@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admin_AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Plakaten | Administration</title>
+    <link href="../Css/admin.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="wrapper">
+
+            <asp:Panel ID="pnlAdmin" runat="server" Visible="false">
+
+                <div id="menu-left">
+                    <div><a href="Default.aspx">Forside</a></div>
+                    <br />
+
+                    Opret
+            <div><a href="OpretKategori.aspx">Opret Kategori</a></div>
+                    <div><a href="OpretProdukt.aspx">Opret Produkt</a></div>
+                    <div><a href="OpretBruger.aspx">Opret Bruger</a></div>
+                    <br />
+
+                    Oversigt
+            <div><a href="ProduktOversigt.aspx">Produkt Oversigt</a></div>
+                    <div><a href="OrdrerOversigt.aspx">Ordrer Oversigt</a></div>
+                    <br />
+            <div><a href="Mail.aspx">Beskeder</a></div>
+                    <br />
+
+                    <asp:Button ID="btnLogout" runat="server"
+                        Text="Logud" OnClick="btnLogout_Click"
+                        Style="height: 26px"
+                        CssClass="btn-style-gen" />
+
+                </div>
+            </asp:Panel>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+        </div>
+    </form>
+</body>
+</html>
